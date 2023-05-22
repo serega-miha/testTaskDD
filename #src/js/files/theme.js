@@ -2,15 +2,7 @@
 
 
 
-
-// const header = document.querySelector('header'),
-//     wrapper = document.querySelector('.wrapper'),
-//     bodyTheme = document.body,
-//     allTheme = document.querySelectorAll('.theme'),
-//     footer = document.querySelector('footer'),
-//     pageCatalog = document.querySelector('toggle-box-header');
-    
-
+//переключение тем
 
 
 

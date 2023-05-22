@@ -1,3 +1,4 @@
+// функция преобразования даты
 
 
 
@@ -28,6 +29,8 @@ if (day === 0){
 return (dayNames[day] + ',' + ' ' + weekOfMonth + ' ' + 'неделя' + ' ' + monthNames[month] + ' ' + year + ' ' + 'года');
 
 };
+
+
 
     //Попытка подгона практически удалась))))
         // let newDate3 = new Date("05.18.2023").toLocaleString('ru', {

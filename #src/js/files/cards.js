@@ -1,60 +1,9 @@
-
-// class MenuCard {
-//     constructor(src, alt, title, text, price, parentSelector, ...classes) {
-//         this.src = src;
-//         this.alt = alt;
-//         this.title = title;
-//         this.subtitle = subtitle;
-//         this.price = price;
-//         this.data = data;
-//         this.classes = classes;
-//         this.parent = document.querySelector(parentSelector);
-
-//     }
+//функция создания карточек из базы данных
+//функция фильтров карточек
 
 
 
-//     render() {
-//         const element = document.createElement('div');
-
-//         if (this.classes.length === 0) {
-//             this.element = 'catalog-card';
-//             element.classList.add(this.element);
-//         } else {
-//             this.classes.forEach(className => element.classList.add(className));
-//         }
-
-//         element.innerHTML = `
-
-
-//                 <div class="card-body">
-
-//                     <div class="card-img _ibg">
-//                         <img src=${this.src} alt=${this.alt}>
-//                     </div>
-
-//                     <div class="card-info__title">
-//                         <h3>${this.title}</h3>
-//                     </div>
-//                     <div class="card-info__subtitle">
-//                         <h3>${this.subtitle}</h3>
-//                     </div>
-//                     <div class="card-price">${this.price}</div>
-//                     <div class="card-data">${this.data}</div>
-//                     <div class="card-btn"><a href="#" class="card-btn__link">Купить</a></div>
-//                 </div>
-
-
-//               `;
-//         //   element.classList.add('menu__item');
-//         this.parent.append(element);
-//     }
-// }
-
-
-
-
-
+//create cards
 //функция принимает базу данных и ID родителя, перебирает базу данных и добавляет код HTML(сами карточки)
 function addAllCards(dataBase, idParent) {
     let itemCard = '';

@@ -1,7 +1,7 @@
 
 
-// Извините, не понял строгости в Тех задании, одна кнопка появляется после скролла в 800px , второая СТРОГО после прокрутки ИЗ МЕНЮ!
 
+//прокрутка к якорям
 
 const btnCategories = document.querySelectorAll('[data-scroll]');
 
@@ -14,7 +14,7 @@ btnCategories.forEach(btn => {
         let screenWidth = window.screen.width;
         if (screenWidth <= 768 && btn.classList.contains('menu__link')){
             document.querySelector('.icon-menu').click();
-            console.log('111');
+          
         }
         document.querySelector('.icon-menu').classList.remove('_active');
         // нашли элемент куда нужно прокрутиться

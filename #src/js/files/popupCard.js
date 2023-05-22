@@ -12,7 +12,7 @@ let popupItem = document.querySelector('.popup-card');
 
 // let product =  addInfoPopupCard(phoneDB, 10);
 
-//open popup
+//слушаем кнопки купить
 allBtnBuy.forEach(btn => {
     btn.addEventListener('click', (e) => {
         e.preventDefault();
@@ -74,8 +74,6 @@ allBtnBuy.forEach(btn => {
         btnBuy.addEventListener('click', (e) => {
             e.preventDefault();
             
-            
-
             openThanks(radioBtnChecked);
             
             
@@ -85,7 +83,7 @@ allBtnBuy.forEach(btn => {
     })
 });
 
-//opent popup
+//open popup
 function openPopup() {
     popupField.classList.add('_active');
     bodyBlock();
@@ -103,7 +101,7 @@ function closePopup() {
 
 
 
-
+//блокировка боди
 function bodyBlock() {
     body.classList.add('modal-open');
   
@@ -118,6 +116,8 @@ function bodyUlock() {
 }
 
 
+//попап спасибо
+//=================================================================================================================================
 //spasibo
     function openThanks(color) {
    
@@ -324,28 +324,6 @@ return infoPopupItem;
 
 }
 
-// function createPopupThanks(product) {
-    
-//     let infoPopupItem = '';
-//     infoPopupItem = `
-//             <div class="thanks-header">
-//             <div class="thanks-header__title	">
-//                 <h2>Поздравляем вы купили: ${product.name}</h2>
-//                 <h3>имя товар</h3>
-//                 <h4>В количестве <span></span> шт.</h4>
-//                 <h4>на общую сумму:</h4>
-//             </div>
-            
-//             </div>
-
-//             <div class="thanks-btn"><a href="#"  data-close>Закрыть</a></div>
-//             </div>
-            
-    
-//     `
-//     return infoPopupItem;
-    
-//     }
 
 
 
@@ -356,62 +334,6 @@ return infoPopupItem;
 
 
 
-
-
-
-
-
-
-
-
-
-// allBtnBuy.forEach(btn => {
-//     btn.addEventListener('click', (e) => {
-//         e.preventDefault();
-        
-//         product =  addInfoPopupCard(phoneDB, +btn.id);
-//         popupField.classList.add('_active');
-
-//         const listimgRadio = imgRadioList(product);
-
-      
-//         popupItem.insertAdjacentHTML('afterbegin', createPopupCard(product));
-
-
-//         //следим за событием чтобы переключать картинки на карточках
-
-//         const allRadioBtn = popupItem.querySelectorAll('.box-radio input');
-//         const imgPopup = popupItem.querySelector('.modal-info__img img');
-        
-//         allRadioBtn.forEach((item,i) =>{
-//             item.addEventListener('click', (e) => {
-//                 imgPopup.setAttribute('src', listimgRadio[i])
-        
-//             })
-//         });
-//         bodyBlock();
-//         popupField.addEventListener('click', (e) => {
-//             if (e.target === popupField || e.target.getAttribute('data-close') == '') {
-//                    e.preventDefault();
-//                    closePopup();
-//                 }
-//             });
-        
-//         // popupField.addEventListener('keydown', (e) =>{
-//         //     if (e.code === "Escape") {
-//         //         e.preventDefault();
-//         //         closePopup();
-//         //         }
-//         // })
-        
-
-//         const btnBuy = popupField.querySelector('[indexBuy]');
-//         btnBuy.addEventListener('click', (e) => {
-//             e.preventDefault();
-  
-//             openThanks();
-            
-//         });
 
 
 

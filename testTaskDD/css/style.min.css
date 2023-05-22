@@ -139,6 +139,12 @@ h6 {
     opacity: 1;
   }
 }
+.modal-open {
+  height: 100vh;
+  overflow: hidden;
+  padding-right: 17px;
+}
+
 .popup {
   z-index: 200;
   padding: 30px 10px;
@@ -986,10 +992,4 @@ footer a {
 }
 .btn-up a:hover {
   background-color: #f7b740;
-}
-
-.modal-open {
-  height: 100vh;
-  overflow: hidden;
-  padding-right: 17px;
 }
