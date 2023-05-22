@@ -1,0 +1,285 @@
+//====================================================================================================
+//popup container start 
+.popup {
+
+	z-index: 200;
+	padding: 30px 10px;
+	position: fixed;
+	top: 0px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transition: visibility 0.8s ease 0s;
+	visibility: hidden;
+
+	&::before {
+		content: "";
+		background-color: rgba(0, 0, 0, 0.9);
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		opacity: 0;
+		transition: opacity 0.8s ease 0s;
+	}
+
+	&._active {
+		overflow: auto;
+		visibility: visible;
+
+		&::before {
+			opacity: 1;
+		}
+
+		.popup__body {
+			transition: all 0.3s ease 0.2s;
+			transform: scale(1);
+		}
+	}
+}
+
+.popup__content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-height: 100%;
+	flex: 1 1 auto;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+// 
+.popup__body {
+	transform: scale(0);
+	transition: all 0.3s ease 0s;
+	background-color: #fff;
+	padding: 20px;
+	width: 100%;
+	max-width: 800px;
+}
+
+// 
+.popup__close {
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	cursor: pointer;
+	z-index: 230;
+	color: black;
+	background: url("../img/icons/close.svg") 0 0 no-repeat;
+}
+//popup container end 
+//====================================================================================================
+//modal start
+.modal {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba($color: #000000, $alpha: .7);
+	z-index: 200;
+
+}
+
+.modal-container {
+	max-height: 500px;
+	max-width: 600px;
+	background-color: white;
+	margin: 0 auto;
+	position: absolute;
+	top: 20%;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+}
+
+.modal-close {}
+
+.form-sale {}
+
+.modal-header {
+	text-align: center;
+}
+
+.modal-header__title {
+	margin: 0px 0px 20px 0px;
+
+	h3 {
+		font-size: 25px;
+		font-weight: 800;
+	}
+}
+
+.modal-body {}
+
+.input-text {
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: 5px 5px;
+	margin: 5px;
+	max-width: 250px;
+}
+
+.modal-body__info {
+	padding: 10px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 100%;
+
+	@media (max-width: $md4+px) {
+		flex-direction: column;
+	}
+}
+
+.modal-info__img {
+	padding: 10px;
+
+	img {
+		height: 250px;
+		width: 200px;
+	}
+}
+
+.modal-info__item {
+	flex: 1 1 auto;
+
+	margin: 0px 20px;
+	display: flex;
+	flex-direction: column;
+
+	height: 100%;
+
+}
+
+.modal-info__item__count {}
+
+.box-radio {
+	padding: 5px;
+
+
+}
+
+.modal-info__item__radio {
+	flex: 1 1 auto;
+	padding: 10px 0px
+}
+
+.input-radio {}
+
+.modal-info__item__textarea {
+	label {}
+
+
+}
+
+.label-textarea {
+	margin: 0px 0px 15px 0px;
+
+}
+
+.modal-body__buy {
+	padding: 10px 0;
+}
+
+.modal-description {
+	padding: 20px 10px;
+}
+
+.modal-btn {
+	text-align: center;
+
+	a {
+		color: orange;
+		background-color: #474747;
+		padding: 10px 35px;
+		border-radius: 10px;
+
+		letter-spacing: 2px;
+
+		@media (max-width: $md4+px) {
+			padding: 10px 15px;
+		}
+
+		&:first-child {
+			margin: 0px 60px 0px 0px;
+
+			@media (max-width: $md4+px) {
+				margin: 0px 20px 0px 0px;
+			}
+
+		}
+	}
+
+}
+
+
+
+//modall end
+//====================================================================================================
+
+
+///modal-thanks start
+.thanks-header {
+	text-align: center;
+}
+
+.thanks-header__title {
+	margin: 0px 0px 50px 0px;
+
+	h2 {
+		font-size: 30px;
+		font-weight: 600;
+		margin: 0px 0px 20px 0px;
+
+	}
+
+	h3 {
+		font-size: 33px;
+		font-weight: 700;
+		margin: 0px 0px 20px 0px;
+		text-decoration: underline;
+	}
+
+	h4 {
+		font-size: 20px;
+		font-weight: 500;
+		margin: 0px 0px 20px 0px;
+
+		span {
+			font-size: 26px;
+			font-weight: 700;
+		}
+	}
+
+}
+
+.color-product {
+	text-decoration: underline;
+}
+
+.thanks-btn {
+	text-align: center;
+
+	a {
+		color: orange;
+		background-color: #474747;
+		padding: 10px 35px;
+		border-radius: 10px;
+
+		letter-spacing: 2px;
+
+
+	}
+
+}
+
+
+///modal-thanks end

@@ -1,0 +1,10 @@
+//<ОСНОВНОЙ БЛОК>====================================================================================================
+.hide{
+	display: none;
+}
+.show{
+	display: block;
+	animation-name: fade;
+	animation-duration: 0.8s;
+}
+@keyframes fade{from{opacity: 0.1;}to{opacity: 1;}}
